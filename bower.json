@@ -1,0 +1,23 @@
+{
+  "name": "personal",
+  "version": "0.0.0",
+  "description": "website",
+  "authors": [
+    "Rohit Sharma"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "reset-scss": "*"
+  },
+  "dependencies": {
+    "neat": "~1.7.2",
+    "slick.js": "~1.5.5"
+  }
+}

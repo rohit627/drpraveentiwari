@@ -1,0 +1,33 @@
+section.main {
+    margin-top: 20vh;
+    background-color: white;
+    text-align: center;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    h2 {
+        padding-top: 75px;
+        padding-bottom: 10px;
+        font-size: 2em;
+        text-transform: uppercase;
+        color: $light-gray;
+    }
+
+    hr {
+        width: 5%;
+        display: inline-block;
+    }
+
+    .slider-for {
+        padding: 1em 30px;
+        margin-bottom: 0px;
+    }
+    .slider-nav {
+        width: 75%;
+        display: inline-block;
+        padding: 1em 30px;
+        @include media(960px) {
+            width: 85%;
+        }
+    }
+}

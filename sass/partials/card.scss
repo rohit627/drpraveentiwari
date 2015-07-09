@@ -1,0 +1,49 @@
+.card {
+    padding-top: 40px;
+    text-align: center;
+}
+.card-content {
+    width: 75%;
+    display: inline-block;
+    text-align: left;
+    @include media(960px) {
+        width: 85%;
+    }
+}
+
+.card-img {
+    float: left;
+    margin-right: 35px;
+    height: 150px;
+    width: 150px;
+    border-radius: 3px;
+}
+.card-praise {
+    line-height: 1.5;
+    margin-left: 35px;
+
+    h4 {
+        font-size: 2em;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: $light-black;
+        text-transform: capitalize;
+    }
+    p {
+        line-height: 1.6;
+    }
+}
+.preview-card {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.preview-img {
+    opacity: 0.7;
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+}
