@@ -6,4 +6,9 @@ $light-gray: hsl(0,0%,75%);
 body {
     color: $black;
     background-color: white;
+    min-width: 780px;
+}
+
+.bold {
+    font-weight: bold;
 }

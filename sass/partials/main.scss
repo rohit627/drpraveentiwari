@@ -2,6 +2,7 @@ section.main {
     margin-top: 20vh;
     background-color: white;
     text-align: center;
+    padding-bottom: 40px;
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
@@ -28,29 +29,6 @@ section.main {
         padding: 1em 30px;
         @include media(960px) {
             width: 85%;
-        }
-    }
-    .brands {
-        padding: 40px 30px 0 30px;
-    }
-    .brand {
-        @include span-columns(2);
-        overflow: hidden;
-
-        img {
-            border-radius: 3px;
-            max-width: 100%;
-        }
-
-        #prajatantra_live {
-            padding-top: 20px;
-        }
-
-        #dainik_bhasker {
-            padding-top: 35px;
-        }
-        #amar_ujala {
-            padding-top: 20px;
         }
     }
 }

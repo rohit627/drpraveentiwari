@@ -1,0 +1,40 @@
+.brands {
+    padding: 40px 30px 0 30px;
+    display: inline-block;
+    width: 85%;
+    @include media(960px) {
+        width: 95%;
+    }
+}
+.brand {
+    @include span-columns(2);
+    overflow: hidden;
+
+    img {
+        border-radius: 3px;
+        max-width: 100%;
+        filter: grayscale(100%);
+        opacity: 0.8;
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    #prajatantra_live {
+        padding-top: 20px;
+    }
+
+    #dainik_bhasker {
+        padding-top: 35px;
+    }
+    #amar_ujala {
+        padding-top: 20px;
+    }
+}

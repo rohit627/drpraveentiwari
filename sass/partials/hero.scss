@@ -10,26 +10,26 @@ section.hero {
         }
     }
     h1 {
-        font-size: 4em;
+        font-size: 3.5em;
         transition: font-size 0.1s ease-out;
-        @include media(480px) {
-            font-size: 3em;
-        }
+        // @include media(480px) {
+        //     font-size: 3em;
+        // }
     }
 
     p {
         padding-top: 1em;
         padding-left: 150px;
         font-style: oblique;
-        @include media(480px) {
-            padding-left: 60px;
-        }
+        // @include media(480px) {
+        //     padding-left: 60px;
+        // }
     }
 
     .img-cover {
         position: absolute;
         right: -180px;
-        background-image: url('../img/praveen.jpg');
+        background-image: url('../img/drpraveentiwari.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -54,8 +54,8 @@ section.hero {
             width: 250px;
             height: 250px;
         }
-        @include media(768px) {
-            opacity: 0;
-        }
+        // @include media(768px) {
+        //     opacity: 0;
+        // }
     }
 }
