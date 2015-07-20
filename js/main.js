@@ -34,6 +34,11 @@ $("#india_prime").animatedModal({
     color: 'white',
 });
 
+$("#satya").turn({
+    elevation: 50,
+    autoCenter: true
+});
+
 
 var disableHoverOnScroll = function() {
     var body = document.body, timer;

@@ -1,0 +1,44 @@
+.books {
+    padding: 40px 30px 0 30px;
+    display: inline-block;
+    width: 85%;
+    @include media(960px) {
+        width: 95%;
+    }
+}
+.book-info {
+    @include span-columns(6);
+    text-align: left;
+
+    h3 {
+        font-family: 'droid_serifregular', serif;
+        font-size: 1.5em;
+        padding-bottom: 15px;
+    }
+}
+.book {
+    @include span-columns(4);
+    @include shift(2);
+    @include media(960px) {
+        @include shift(1);
+    }
+    .container {
+        overflow: hidden;
+        display: block;
+        border-radius: 5px;
+        height: 230px;
+        width: 290px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        .page {
+            background-color: red;
+            background-size: cover;
+        }
+
+        .shadow {
+            box-shadow: 0 0 20px lighten($light-black,30%);
+        }
+    }
+}
