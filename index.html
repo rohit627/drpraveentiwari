@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animate.min.css">
     </head>
     <body>
         <!-- praveen tiwari -->
@@ -23,7 +24,7 @@
             <section class="hero">
                 <div class="img-cover">
                 </div>
-                <div class="banner">
+                <div class="banner" id="title">
                     <h1>Dr. Praveen Tiwari</h1>
                     <p>
                         The search of truth is the devine intervention.
@@ -140,6 +141,57 @@
                     </div>
                 </div>
 
+                <!-- Shows -->
+                <h2>Shows</h2>
+                <hr>
+
+                <div class="full-show" id="full-show"></div>
+
+                <div class="shows">
+                    <a href="#animatedModal" class="preview-show" id="india_prime">
+                        <figure>
+                            <img src="img/shows/india_prime.png" alt="india_prime" class="preview">
+                            <figcaption>India Prime</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#animatedModal" class="preview-show" id="india_prime">
+                        <figure>
+                            <img src="img/shows/janta_bole.jpg" alt="janta_bole" class="preview">
+                            <figcaption>Janta Bole</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#animatedModal" class="preview-show" id="india_prime">
+                        <figure>
+                            <img src="img/shows/ndnb.jpg" alt="naya_din_nayee_baat" class="preview">
+                            <figcaption>Naya Din Nayee Baat</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#animatedModal" class="preview-show" id="india_prime">
+                        <figure>
+                            <img src="img/shows/sports.jpg" alt="sports" class="preview">
+                            <figcaption>Sports</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                    <!--DEMO01-->
+                <div id="animatedModal">
+                    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID class="close-animatedModal" -->
+                    <div class="close-animatedModal">
+                    ✕
+                    </div>
+                    <div class="modal-content">
+                    <div class="card">
+                        <div class="card-content">
+                            <img src="img/rahul_dev.jpg" alt="rahul_dev" class="card-img">
+                            <div class="card-praise">
+                                <h4>rahul dev</h4>
+                                <p>Praveen is a rarity in Indian media. I know of no other journalist who is a accomplished cartoonist, has a doctorate in discipline, and acclaimed and popular television news anchor, and a magzine editor, managing all this with easy aplomb.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
                 <!-- worked with -->
                 <h2>Worked with</h2>
                 <hr>
@@ -179,6 +231,8 @@
             </div>
         </section>
 
+
+        <!-- Footer -->
         <footer>
             <div class="container">
                 <div class="footnotes">
@@ -201,6 +255,7 @@
 
         <script src="js/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/animatedModal.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

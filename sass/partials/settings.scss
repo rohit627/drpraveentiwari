@@ -3,12 +3,50 @@ $hair: #1E1F21;
 $light-black: hsl(0,0%,20%);
 $light-gray: hsl(0,0%,75%);
 
+@font-face {
+    font-family: 'droid_serifregular';
+    src: url('fonts/DroidSerif-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     color: $black;
     background-color: white;
     min-width: 780px;
+    font-family: serif;
 }
 
 .bold {
     font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.no-fade {
+    opacity: 1;
+}
+
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
+
+.scroll-cover {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  pointer-events: auto !important;
+  z-index: 10000;
 }

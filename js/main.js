@@ -1,3 +1,5 @@
+(function() {
+
 var slider = {
 
     init: function() {
@@ -25,4 +27,45 @@ var slider = {
 
 }
 
-$(document).ready(slider.init());
+slider.init();
+
+
+$("#india_prime").animatedModal({
+    color: 'white',
+});
+
+
+var disableHoverOnScroll = function() {
+    var body = document.body, timer;
+
+    window.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      if(!body.classList.contains('disable-hover')) {
+        body.classList.add('disable-hover')
+      }
+
+      timer = setTimeout(function(){
+        body.classList.remove('disable-hover')
+        console.log('yo');
+      },500);
+    }, false);
+}
+
+var disableCover = function() {
+    var body = document.body, timer;
+    var cover = document.createElement('div');
+    cover.setAttribute('class','scroll-cover');
+
+    window.addEventListener('scroll', function() {
+      clearTimeout(timer);
+      body.appendChild(cover);
+
+      timer = setTimeout(function(){
+        body.removeChild(cover);
+      },500);
+    }, false);
+}
+
+disableCover();
+
+})();

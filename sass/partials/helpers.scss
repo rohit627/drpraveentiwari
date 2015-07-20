@@ -1,3 +1,19 @@
 .container {
     @include outer-container;
 }
+.close-animatedModal {
+    cursor: pointer;
+    float: left;
+    display: block;
+    clear: right;
+    padding: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+        transform: rotate(180deg);
+    }
+}
+.modal-content {
+}
