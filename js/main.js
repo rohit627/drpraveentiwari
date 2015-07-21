@@ -31,7 +31,7 @@ slider.init();
 
 
 $("#india_prime").animatedModal({
-    color: 'white',
+    color: 'black',
 });
 
 $("#satya").turn({
@@ -39,7 +39,20 @@ $("#satya").turn({
     autoCenter: true
 });
 
+$('.gallery').magnificPopup({
+    type: 'image',
+    delegate: 'a',
 
+    gallery: {
+        enabled: true
+    },
+    image: {
+        titleSrc: 'title'
+    }
+});
+
+
+// disable hover
 var disableHoverOnScroll = function() {
     var body = document.body, timer;
 

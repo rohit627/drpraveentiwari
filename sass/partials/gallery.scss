@@ -1,0 +1,26 @@
+.gallery {
+    padding: 40px 30px 0 30px;
+    display: inline-block;
+    width: 85%;
+    @include media(960px) {
+        width: 95%;
+    }
+
+    .photo {
+        @include span-columns(2);
+        display: block;
+        outline: none;
+        opacity: 0.9;
+
+        img {
+            width: 100%;
+            height: 100px;
+        }
+
+        img:hover {
+            transform: scale(1.1,1.1);
+            width: 100%;
+            height: 100px;
+        }
+    }
+}

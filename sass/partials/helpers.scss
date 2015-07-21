@@ -4,7 +4,9 @@
 .close-animatedModal {
     cursor: pointer;
     float: left;
+    color: white;
     display: block;
+    overflow: hidden;
     clear: right;
     padding: 50px;
     font-size: 2em;
@@ -12,10 +14,19 @@
     transition: transform 0.2s ease-out;
 
     &:hover {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
+}
+.modal-content {
+    color: white !important;
 }
 
 .hard {
     background-color: $light-gray;
+}
+.wide {
+    width: 210px;
+}
+.white {
+    color: white;
 }
