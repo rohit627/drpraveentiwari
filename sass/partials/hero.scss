@@ -12,6 +12,7 @@ section.hero {
     h1 {
         font-size: 3.5em;
         transition: font-size 0.1s ease-out;
+        font-family: 'typewriter', serif;
         @include media(960px) {
             font-size: 2.9em;
         }
@@ -29,7 +30,7 @@ section.hero {
     .img-cover {
         position: absolute;
         right: -180px;
-        background-image: url('../img/drpraveentiwari.jpg');
+        background-image: url('../img/drpraveentiwari2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;

@@ -1,10 +1,11 @@
 .container {
     @include outer-container;
 }
-.close-animatedModal {
+
+div[class^="close-"] {
     cursor: pointer;
     float: left;
-    color: white;
+    color: black;
     display: block;
     overflow: hidden;
     clear: right;
@@ -18,7 +19,7 @@
     }
 }
 .modal-content {
-    color: white !important;
+    // color: white !important;
 }
 
 .hard {

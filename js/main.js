@@ -30,8 +30,18 @@ var slider = {
 slider.init();
 
 
-$("#india_prime").animatedModal({
-    color: 'black',
+$("#elections").animatedModal({
+    color: 'white',
+    modalTarget: 'electionsModal',
+    animatedIn: 'bounceInUp',
+    animatedOut: 'bounceOutDown'
+});
+
+$("#interviews").animatedModal({
+    color: 'white',
+    modalTarget: 'interviewsModal',
+    animatedIn: 'bounceInUp',
+    animatedOut: 'bounceOutDown'
 });
 
 $("#satya").turn({
