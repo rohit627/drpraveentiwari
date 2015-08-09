@@ -14,7 +14,7 @@ section.hero {
     .bio {
         position: fixed;
         cursor: pointer;
-        background-color: white;
+        background-image: url('../img/backgrounds/skin.png');
         z-index: 99;
         display: none;
         opacity: 0;
@@ -28,11 +28,26 @@ section.hero {
             max-width: 960px;
             min-width: 780px;
             margin: auto;
-            padding-top: 100px;
-            padding-right: 300px;
+            padding: 50px 30px 0 30px;
 
+            h2 {
+                font-weight: bold;
+                font-size: 1.5em;
+                padding-bottom: 1em;
+                text-shadow: 1px 0px 3px lighten($light-gray,30%);
+            }
+            .no-pad {
+                padding-right: 0px !important;
+            }
             p {
-                font-style: none;
+                padding-right: 300px !important;
+                padding-bottom: 1em !important;
+                font-style: normal;
+                font-family:  serif;
+                text-align: justify;
+                font-size: 1.05em;
+                line-height: 1.6;
+                text-shadow: 0px 1px 3px lighten($light-gray,20%);
                 padding: 0;
             }
         }

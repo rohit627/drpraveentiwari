@@ -44,15 +44,15 @@ slider.init();
 $("#elections").animatedModal({
     color: 'white',
     modalTarget: 'electionsModal',
-    animatedIn: 'bounceInUp',
-    animatedOut: 'bounceOutDown'
+    animatedIn: 'fadeInUp',
+    animatedOut: 'fadeOutDown'
 });
 
 $("#interviews").animatedModal({
     color: 'white',
     modalTarget: 'interviewsModal',
-    animatedIn: 'bounceInUp',
-    animatedOut: 'bounceOutDown'
+    animatedIn: 'fadeInUp',
+    animatedOut: 'fadeOutDown'
 });
 
 $("#satya").turn({
