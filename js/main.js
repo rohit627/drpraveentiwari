@@ -1,7 +1,11 @@
 (function() {
 
 new WOW().init();
-var chil = $('.main > .container > *').addClass('wow fadeInUp');
+$('.main > .container > *').addClass('wow fadeInUp');
+
+$('.shows > *').on('click', function(e) {
+    e.preventDefault();
+});
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
@@ -41,19 +45,19 @@ var slider = {
 slider.init();
 
 
-$("#elections").animatedModal({
-    color: 'white',
-    modalTarget: 'electionsModal',
-    animatedIn: 'fadeInUp',
-    animatedOut: 'fadeOutDown'
-});
+// $("#elections").animatedModal({
+//     color: 'white',
+//     modalTarget: 'electionsModal',
+//     animatedIn: 'fadeInUp',
+//     animatedOut: 'fadeOutDown'
+// });
 
-$("#interviews").animatedModal({
-    color: 'white',
-    modalTarget: 'interviewsModal',
-    animatedIn: 'fadeInUp',
-    animatedOut: 'fadeOutDown'
-});
+// $("#interviews").animatedModal({
+//     color: 'white',
+//     modalTarget: 'interviewsModal',
+//     animatedIn: 'fadeInUp',
+//     animatedOut: 'fadeOutDown'
+// });
 
 $("#satya").turn({
     elevation: 50,
@@ -86,6 +90,17 @@ $('.gallery').magnificPopup({
     }
 });
 
+$('.gallery').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    arrows: true,
+    draggable: true,
+});
+
+$('.slick-prev').text("<");
+$('.slick-next').text(">");
 
 // disable hover
 var disableHoverOnScroll = function() {
