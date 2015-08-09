@@ -16,14 +16,17 @@ $light-gray: hsl(0,0%,55%);
     font-weight: normal;
     font-style: normal;
 }
-
+html {
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased;
+}
 body {
     color: $black;
     background-color: white;
-    background-image: url('../img/backgrounds/whitediamond.png');
+    background-image: url('../img/backgrounds/white.png');
     min-width: 780px;
     font-family: serif;
-}
+  }
 
 .bold {
     font-weight: bold;

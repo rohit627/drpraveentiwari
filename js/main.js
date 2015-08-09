@@ -1,5 +1,16 @@
 (function() {
 
+new WOW().init();
+var chil = $('.main > .container > *').addClass('wow fadeInUp');
+
+$(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    if( scroll == 0)
+    {
+        new WOW().init();
+    }
+});
+
 var slider = {
 
     init: function() {
@@ -47,6 +58,20 @@ $("#interviews").animatedModal({
 $("#satya").turn({
     elevation: 50,
     autoCenter: true
+});
+
+$("#menu-toggle").on('click', function() {
+    //animate the image
+    $('.bio').fadeIn(500).delay(50).fadeTo("fast",1);
+    $('.img-cover').addClass('click');
+    //disable scroll
+    window.onscroll = function () { window.scrollTo(0, 0); };
+});
+
+$('.bio').on('click', function() {
+    $('.bio').fadeTo("fast",0).fadeOut(700);
+    $('.img-cover').removeClass('click');
+    window.onscroll = function () {};
 });
 
 $('.gallery').magnificPopup({

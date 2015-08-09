@@ -2,6 +2,11 @@
     @include outer-container;
 }
 
+.dis {
+    display: inherit !important;
+    opacity: 1 !important;
+}
+
 div[class^="close-"] {
     cursor: pointer;
     float: left;
