@@ -18,11 +18,34 @@ footer {
         line-height: 1.6;
         padding: 0 30px;
     }
+    .company {
+        @include span-columns(4);
+        text-align: center;
+        padding-top: 95px;
+        h3 {
+            display: inline-block;
+            font-size: 0.8em;
+            margin-left: -15px;
+            vertical-align: middle;
+        }
+
+        img {
+            width: 28%;
+            margin-left: 2px;
+            opacity: 0.5;
+            display: inline-block;
+            transition: opacity 0.1s ease-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
     .contact {
         @include span-columns(4);
-        @include shift(4);
         text-align: left;
-        padding: 0 30px;
+        padding: 42px 30px 0 30px;
         line-height: 1.6;
     }
     .indent {
